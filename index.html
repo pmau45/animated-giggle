@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & LOCALIZATION -->
+    <title>AXIOM CANINE | Working Breed Foundations Jacksonville</title>
+    <meta name="description" content="Specialized foundation training for high-drive and working breeds in Jacksonville. We prevent owner surrender through clear communication and basic command structure.">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- THE AXIOM DESIGN SYSTEM --- */
+        :root {
+            --void: #050505;       /* Deep Black */
+            --concrete: #1a1a1a;   /* Dark Grey Surface */
+            --steel: #888888;      /* Text Muted */
+            --flash: #F0F0F0;      /* Text Bright */
+            --hazard: #FF3300;     /* International Orange */
+            
+            --font-head: 'Oswald', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* --- RESET & BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--void);
+            color: var(--flash);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        h2 { font-size: 2.5rem; color: var(--flash); margin-bottom: 2rem; }
+        p { color: var(--steel); max-width: 60ch; margin-bottom: 1.5rem; }
+
+        .highlight { color: var(--hazard); }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section { padding: 80px 0; border-bottom: 1px solid #222; }
+
+        /* --- COMPONENTS --- */
+        .btn {
+            display: inline-block;
+            background-color: var(--hazard);
+            color: var(--void);
+            font-family: var(--font-head);
+            font-weight: 700;
+            padding: 15px 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--hazard);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--hazard);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            /* Placeholder gradient - replace with your dog photo */
+            background: linear-gradient(135deg, rgba(5,5,5,0.9), rgba(26,26,26,0.8)), 
+                        radial-gradient(ellipse at center, #1a1a1a 0%, #050505 100%);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Optional: Add this class when you have your hero image */
+        .hero.with-image {
+            background: linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9)), 
+                        url('images/hero-dog.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* --- PHILOSOPHY GRID --- */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--concrete);
+            padding: 30px;
+            border-left: 2px solid var(--hazard);
+        }
+
+        .card h3 { margin-bottom: 10px; color: var(--flash); }
+
+        /* --- CONTACT FORM --- */
+        .form-box {
+            background: var(--concrete);
+            padding: 40px;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            font-family: var(--font-head);
+            color: var(--steel);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        input, select {
+            width: 100%;
+            background: var(--void);
+            border: 1px solid #333;
+            color: var(--flash);
+            padding: 15px;
+            margin-bottom: 20px;
+            font-family: var(--font-body);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--hazard);
+        }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 50px 0; }
+            .hero { height: 70vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav style="padding: 20px 0; border-bottom: 1px solid #222;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-family: var(--font-head); font-weight: 700; font-size: 1.5rem; letter-spacing: 2px;">
+                AXIOM <span class="highlight">CANINE</span>
+            </div>
+            <a href="#contact" style="font-family: var(--font-head); font-size: 0.9rem; color: var(--steel);">STATUS: <span class="highlight">ACCEPTING CASES</span></a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <h1>UNTRAINED DOGS<br>DON'T STAY HOME.</h1>
+            <p>High-drive dogs without a job become destructive. We provide the operational structure that keeps working breeds out of shelters and in your family.</p>
+            <a href="#contact" class="btn">Prevent The Statistic</a>
+        </div>
+    </header>
+
+    <!-- THE PHILOSOPHY -->
+    <section>
+        <div class="container">
+            <h2>THE COMMUNICATION GAP.</h2>
+            <p>Owning a working breed (Shepherd, Malinois, Husky) without a system is dangerous. These dogs are designed to work. If you don't give them a language, they will invent their own chaos.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>01 // THE REALITY</h3>
+                    <p>Shelters are full of high-drive dogs that were "too much" to handle. They weren't bad dogs; they were misunderstood. We stop that cycle.</p>
+                </div>
+                <div class="card">
+                    <h3>02 // THE FOUNDATION</h3>
+                    <p>Basic commands are not tricks. "Sit," "Down," and "Place" are impulse control switches. They are the difference between a liability and a companion.</p>
+                </div>
+                <div class="card">
+                    <h3>03 // THE DRIVE</h3>
+                    <p>We don't suppress your dog's energy; we channel it. We teach them that obedience is the path to the reward they crave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE INTAKE FORM -->
+    <section id="contact">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2>INITIATE PROTOCOL</h2>
+                    <p>We specialize in high-energy, high-drive, and working breeds. If you are overwhelmed, do not wait until it is too late.</p>
+                    <p style="border-left: 2px solid var(--steel); padding-left: 15px;">
+                        <strong>Service Area:</strong><br>
+                        32081 (Nocatee)<br>
+                        32082 (Ponte Vedra)<br>
+                        32250 (Jax Beach)
+                    </p>
+                </div>
+
+                <div class="form-box" style="flex: 1; min-width: 300px;">
+                    <!-- NETLIFY FORM START -->
+                    <form name="axiom-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- Hidden fields for Netlify -->
+                        <input type="hidden" name="form-name" value="axiom-intake" />
+                        <p style="display: none;">
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </p>
+                        
+                        <label for="name">HANDLER NAME</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+
+                        <label for="email">CONTACT EMAIL</label>
+                        <input type="email" id="email" name="email" required placeholder="email@address.com">
+
+                        <label for="dog-info">DOG BREED & AGE</label>
+                        <input type="text" id="dog-info" name="dog-info" required placeholder="e.g. 1yo Belgian Malinois">
+
+                        <label for="struggle">CURRENT STRUGGLE</label>
+                        <select id="struggle" name="struggle">
+                            <option value="control">No Control / Ignoring Commands</option>
+                            <option value="destruction">Destructive Energy / Boredom</option>
+                            <option value="puppy">Puppy Foundation (Working Breed)</option>
+                            <option value="rescue">Rescue Integration</option>
+                        </select>
+
+                        <button type="submit" class="btn" style="width: 100%;">Submit Application</button>
+                    </form>
+                    <!-- NETLIFY FORM END -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="padding: 40px 0; background: #000; color: #444; font-size: 0.8rem; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 AXIOM CANINE. JACKSONVILLE, FL.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received | AXIOM CANINE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --void: #050505;
+            --concrete: #1a1a1a;
+            --steel: #888888;
+            --flash: #F0F0F0;
+            --hazard: #FF3300;
+            --font-head: 'Oswald', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--void);
+            color: var(--flash);
+            font-family: var(--font-body);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .success-box {
+            background: var(--concrete);
+            padding: 60px;
+            border-left: 4px solid var(--hazard);
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--hazard);
+        }
+        p {
+            color: var(--steel);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--hazard);
+            color: var(--void);
+            font-family: var(--font-head);
+            font-weight: 700;
+            padding: 15px 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--hazard);
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: transparent;
+            color: var(--hazard);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h1>PROTOCOL INITIATED</h1>
+        <p>Your application has been received. We will review your case and contact you within 24-48 hours.</p>
+        <p style="color: var(--flash);"><strong>Next Steps:</strong> Check your email for confirmation and additional intake information.</p>
+        <a href="/" class="btn">Return to Home</a>
+    </div>
+</body>
+</html>
