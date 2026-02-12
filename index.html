@@ -16,11 +16,13 @@
     <style>
         /* --- THE AXIOM DESIGN SYSTEM --- */
         :root {
-            --void: #050505;       /* Deep Black */
-            --concrete: #1a1a1a;   /* Dark Grey Surface */
-            --steel: #888888;      /* Text Muted */
-            --flash: #F0F0F0;      /* Text Bright */
-            --hazard: #FF3300;     /* International Orange */
+            --void: #0A0A0A;           /* Matte Black (base background) */
+            --concrete: #2A2A2A;       /* Slate Grey (surfaces/cards) */
+            --steel: #64748B;          /* Slate Grey (muted text) */
+            --flash: #E2E8F0;          /* Light Slate (bright text) */
+            --electric: #0EA5E9;       /* Electric Blue (primary accent) */
+            --electric-glow: #38BDF8;  /* Lighter blue (hover states) */
+            --electric-dark: #0284C7;  /* Darker blue (pressed states) */
             
             --font-head: 'Oswald', sans-serif;
             --font-body: 'Inter', sans-serif;
@@ -52,7 +54,7 @@
         h2 { font-size: 2.5rem; color: var(--flash); margin-bottom: 2rem; }
         p { color: var(--steel); max-width: 60ch; margin-bottom: 1.5rem; }
 
-        .highlight { color: var(--hazard); }
+        .highlight { color: var(--electric); }
 
         /* --- LAYOUT UTILITIES --- */
         .container {
@@ -66,20 +68,22 @@
         /* --- COMPONENTS --- */
         .btn {
             display: inline-block;
-            background-color: var(--hazard);
+            background-color: var(--electric);
             color: var(--void);
             font-family: var(--font-head);
             font-weight: 700;
             padding: 15px 35px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border: 1px solid var(--hazard);
+            border: 1px solid var(--electric);
             cursor: pointer;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background-color: transparent;
-            color: var(--hazard);
+            background-color: var(--electric-glow);
+            color: var(--void);
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
         }
 
         /* --- HERO SECTION --- */
@@ -114,7 +118,7 @@
         .card {
             background: var(--concrete);
             padding: 30px;
-            border-left: 2px solid var(--hazard);
+            border-left: 2px solid var(--electric);
         }
 
         .card h3 { margin-bottom: 10px; color: var(--flash); }
@@ -147,7 +151,8 @@
 
         input:focus, select:focus {
             outline: none;
-            border-color: var(--hazard);
+            border-color: var(--electric);
+            box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
         }
 
         /* --- MOBILE RESPONSIVENESS --- */
@@ -252,7 +257,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer style="padding: 40px 0; background: #000; color: #444; font-size: 0.8rem; text-align: center;">
+    <footer style="padding: 40px 0; background: var(--void); color: var(--steel); font-size: 0.8rem; text-align: center;">
         <div class="container">
             <p>&copy; 2024 AXIOM CANINE. JACKSONVILLE, FL.</p>
         </div>
